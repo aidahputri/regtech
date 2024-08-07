@@ -1,3 +1,5 @@
+import { FiX } from "react-icons/fi";
+
 type QuestionModalProps = {
   onClose: () => void;
 };
@@ -12,7 +14,9 @@ export const QuestionModal: React.FC<QuestionModalProps> = ({ onClose }) => {
       <div className="flex flex-col bg-white p-6 rounded-xl z-10 gap-4">
         <div className="flex justify-between">
           <span className="text-xl font-bold">Add Question</span>
-          <button onClick={onClose}>close</button>
+          <button onClick={onClose}>
+            <FiX size={20}/>
+          </button>
         </div>
 
         <div className="flex flex-col gap-2">

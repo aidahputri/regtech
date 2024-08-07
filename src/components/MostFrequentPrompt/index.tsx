@@ -1,24 +1,34 @@
 export const MostFrequentPromptTable = () => {
   return (
-    <div className="bg-white p-6 rounded-xl">
-      <table className="table-auto">
+    <div className="bg-white p-6 rounded-xl shadow-md">
+      <table className="min-w-full table-auto">
         <thead>
-          <tr>
-            <th>Prompt</th>
-            <th>Frequency</th>
+          <tr className="bg-gray-200">
+            <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+              Prompt
+            </th>
+            <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+              Frequency
+            </th>
           </tr>
         </thead>
-        <tbody>
+        <tbody className="bg-white divide-y divide-gray-200">
           <tr>
-            <td>
+            <td className="px-6 py-4 whitespace-normal text-sm text-gray-900">
               How can I ensure my business have complied to the government
               regulatory?
             </td>
-            <td>4</td>
+            <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
+              4
+            </td>
           </tr>
           <tr>
-            <td>What is regulatory?</td>
-            <td>3</td>
+            <td className="px-6 py-4 whitespace-normal text-sm text-gray-900">
+              What is regulatory?
+            </td>
+            <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
+              3
+            </td>
           </tr>
         </tbody>
       </table>

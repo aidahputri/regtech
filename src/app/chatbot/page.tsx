@@ -53,7 +53,7 @@ export default function ChatbotPage() {
   }, [simulateResponseStage]);
 
   return (
-    <main className="px-24 pt-16 pb-10 flex flex-col gap-8 h-screen max-h-screen w-full">
+    <main className="md:px-14 lg:px-24 pt-16 pb-10 flex flex-col gap-8 h-screen max-h-screen w-full">
       <div className="grow flex flex-col gap-4">
         {chats.map((v) => {
           return <Chat {...v} />;

@@ -17,9 +17,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+          rel="stylesheet"
+        ></link>
+      </head>
       <body className={`${inter.className} flex`}>
         <Navbar />
-        {children}
+        <div className="w-0 md:w-1/5"></div>
+        <div className="flex w-full md:w-4/5">{children}</div>
       </body>
     </html>
   );
